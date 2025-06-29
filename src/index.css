@@ -28,6 +28,10 @@ body > div {
   align-items: center;
   justify-content: center;
 }
+#footer {
+  padding: 2em;
+  justify-content: space-evenly;
+}
 .red {
   background-color: #b05f6d;
   color: white;
@@ -35,4 +39,26 @@ body > div {
 .blue {
   background-color: #275db3;
   color: white;
+}
+.hommie {
+  background-color: rgba(255, 166, 0, 0.61);
+  border-radius: 2em;
+}
+.animated-text {
+  font-size: 80px;
+  animation: fadeScale 2s ease-in-out;
+  transform-origin: center bottom;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale3d(0.75, 0.75, 1);
+    color: aliceblue;
+  }
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+    color: rgba(22, 22, 207, 0.907);
+  }
 }
